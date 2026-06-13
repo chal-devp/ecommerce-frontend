@@ -1,0 +1,24 @@
+interface Product {
+  productId: string;
+  name: string;
+  price: number;
+  imageUrl: string;
+  description: string;
+  cetagory: string;
+}
+interface cartItem extends Product {
+  quantity: number;
+}
+interface OrderItem {
+  name: string;
+  quantity: number;
+  price: number;
+  productId: string;
+}
+interface order {
+  productId: string;
+  items: OrderItem[];
+  totalamount: number;
+  status: string;
+  createdat: string;
+}
